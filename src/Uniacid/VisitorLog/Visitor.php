@@ -1,9 +1,9 @@
-<?php namespace Jones\VisitorLog;
+<?php namespace Uniacid\VisitorLog;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Session;
-use Jones\VisitorLog\Useragent;
+use Uniacid\VisitorLog\Useragent;
 
 class Visitor extends Model {
 	protected $table = 'visitors';
