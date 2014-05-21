@@ -6,14 +6,14 @@ If anyone has any ideas on how to make this framework agnostic, please contact m
 
 ##Installation
 
-Add `jones/visitor-log` as a requirement to `composer.json`:
+Add `uniacid/visitor-log` as a requirement to `composer.json`:
 
 ```javascript
 {
     ...
     "require": {
         ...
-        "jones/visitor-log": "dev-master"
+        "uniacid/visitor-log": "dev-master"
         ...
     },
 }
@@ -31,7 +31,7 @@ Add the provider to your `app/config/app.php`:
 'providers' => array(
 
     ...
-    'Jones\VisitorLog\VisitorLogServiceProvider',
+    'Uniacid\VisitorLog\VisitorLogServiceProvider',
 
 ),
 ```
@@ -42,7 +42,7 @@ Add the alias to your `app/config/app.php`:
 'aliases' => array(
 
     ...
-	'Visitor'		  => 'Jones\VisitorLog\Visitor',
+	'Visitor'		  => 'Uniacid\VisitorLog\Visitor',
 
 ),
 ```
@@ -50,13 +50,13 @@ Add the alias to your `app/config/app.php`:
 Publish migration:
 
 ```
-$ php artisan migrate --package=jones/visitor-log
+$ php artisan migrate --package=uniacid/visitor-log
 ```
 
 (Optional) Publish package config:
 
 ```
-$ php artisan config:publish jones/visitor-log
+$ php artisan config:publish uniacid/visitor-log
 ```
 
 ##Configuration
