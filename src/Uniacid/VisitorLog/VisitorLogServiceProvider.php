@@ -1,7 +1,7 @@
-<?php namespace Jones\VisitorLog;
+<?php namespace Uniacid\VisitorLog;
 
 use Illuminate\Support\ServiceProvider;
-use Jones\VisitorLog\Visitor;
+use Uniacid\VisitorLog\Visitor;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Request;
@@ -23,7 +23,7 @@ class VisitorLogServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		$this->package('jones/visitor-log');
+		$this->package('uniacid/visitor-log');
 	}
 
 	/**
