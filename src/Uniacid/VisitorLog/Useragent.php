@@ -1,4 +1,4 @@
-<?php namespace Jones\VisitorLog;
+<?php namespace Uniacid\VisitorLog;
 
 use Config, Request;
 
