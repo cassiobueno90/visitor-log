@@ -11,6 +11,10 @@
         {
             "name": "Jones",
             "email": "admin@jonesboard.de"
+        },
+        {
+            "name": "uniacid",
+            "email": "uniacid@gmail.com"
         }
     ],
     "require": {
@@ -22,7 +26,7 @@
             "src/migrations"
         ],
         "psr-0": {
-            "Jones\\VisitorLog": "src/"
+            "Uniacid\\VisitorLog": "src/"
         }
     },
     "minimum-stability": "dev"
