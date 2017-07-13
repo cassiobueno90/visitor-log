@@ -39,9 +39,16 @@ class VisitorLogServiceProvider extends ServiceProvider {
 
 			$page = Request::path();
 			$ignore = Config::get('visitor-log::ignore');
-			if(is_array($ignore) && in_array($page, $ignore))
-			    //We ignore this site
-			    return;
+			/*if(is_array($ignore) && in_array($page, $ignore)) 
+			//We ignore this site
+			    return;*/
+			//UPDATED TO...
+			if(is_array($ignore))
+				foreach ($ignore as $key => $value){
+					if(fnmatch($page, $value))
+						return;
+				}
+			//END UPDATE - Now it accepts string matching with wildcard(*) in the config file
 
 			$visitor = Visitor::getCurrent();
 			
