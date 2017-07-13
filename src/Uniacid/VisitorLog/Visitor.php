@@ -3,7 +3,7 @@
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Session;
-use Uniacid\VisitorLog\Useragent;
+use Cassiobueno90\VisitorLog\Useragent;
 
 class Visitor extends Model {
 	protected $table = 'visitors';
