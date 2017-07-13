@@ -1,5 +1,5 @@
 {
-    "name": "uniacid/visitor-log",
+    "name": "cassiobueno90/visitor-log",
     "description": "A package for Laravel 4 to log all visitors",
 	"keywords": [
 		"laravel",
@@ -15,7 +15,11 @@
         {
             "name": "uniacid",
             "email": "uniacid@gmail.com"
-        }
+        },
+	{
+            "name": "cassiobueno90",
+            "email": "cassiobueno90@gmail.com"
+        },  
     ],
     "require": {
         "php": ">=5.3.0",
