@@ -1,7 +1,7 @@
-<?php namespace Uniacid\VisitorLog;
+<?php namespace Cassiobueno90\VisitorLog;
 
 use Illuminate\Support\ServiceProvider;
-use Uniacid\VisitorLog\Visitor;
+use Cassiobueno90\VisitorLog\Visitor;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Request;
@@ -23,7 +23,7 @@ class VisitorLogServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		$this->package('uniacid/visitor-log');
+		$this->package('cassiobueno90/visitor-log');
 	}
 
 	/**
