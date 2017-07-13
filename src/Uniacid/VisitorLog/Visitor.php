@@ -1,4 +1,4 @@
-<?php namespace Uniacid\VisitorLog;
+<?php namespace Cassiobueno90\VisitorLog;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Config;
