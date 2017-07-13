@@ -30,7 +30,7 @@
             "src/migrations"
         ],
         "psr-0": {
-            "Uniacid\\VisitorLog": "src/"
+            "Cassiobueno90\\VisitorLog": "src/"
         }
     },
     "minimum-stability": "dev"
