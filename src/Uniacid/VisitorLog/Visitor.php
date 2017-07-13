@@ -33,7 +33,8 @@ class Visitor extends Model {
 	{
 		$instance = new static;
 		
-		return $instance->newQuery()->where('updated_at', '<', time()-Config::get('visitor-log::onlinetime')*60)->delete();
+		//return $instance->newQuery()->where('updated_at', '<', time()-Config::get('visitor-log::onlinetime')*60)->delete();
+		return $instance->newQuery()->where('updated_at', '<', date("Y-m-d H:i:s", time()-Config::get('visitor-log::onlinetime')*60))->delete();
 	}
 
 	public static function loggedIn()
