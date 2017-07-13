@@ -19,7 +19,7 @@
 	{
             "name": "cassiobueno90",
             "email": "cassiobueno90@gmail.com"
-        },  
+        }
     ],
     "require": {
         "php": ">=5.3.0",
