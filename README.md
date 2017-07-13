@@ -6,7 +6,7 @@ If anyone has any ideas on how to make this framework agnostic, please contact m
 
 ##Installation
 
-Add `uniacid/visitor-log` as a requirement to `composer.json`:
+Add `cassiobueno90/visitor-log` as a requirement to `composer.json`:
 
 ```javascript
 {
@@ -31,7 +31,7 @@ Add the provider to your `app/config/app.php`:
 'providers' => array(
 
     ...
-    'Uniacid\VisitorLog\VisitorLogServiceProvider',
+    'Cassiobueno90\VisitorLog\VisitorLogServiceProvider',
 
 ),
 ```
@@ -42,7 +42,7 @@ Add the alias to your `app/config/app.php`:
 'aliases' => array(
 
     ...
-	'Visitor'		  => 'Uniacid\VisitorLog\Visitor',
+	'Visitor'		  => 'Cassiobueno90\VisitorLog\Visitor',
 
 ),
 ```
@@ -50,13 +50,13 @@ Add the alias to your `app/config/app.php`:
 Publish migration:
 
 ```
-$ php artisan migrate --package=uniacid/visitor-log
+$ php artisan migrate --package=cassiobueno90/visitor-log
 ```
 
 (Optional) Publish package config:
 
 ```
-$ php artisan config:publish uniacid/visitor-log
+$ php artisan config:publish cassiobueno90/visitor-log
 ```
 
 ##Configuration
