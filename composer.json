@@ -1,5 +1,6 @@
 {
     "name": "cassiobueno90/visitor-log",
+    "version": "1.0.0",
     "description": "A package for Laravel 4 to log all visitors",
 	"keywords": [
 		"laravel",
