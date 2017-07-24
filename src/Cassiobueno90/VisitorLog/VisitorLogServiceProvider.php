@@ -65,7 +65,7 @@ class VisitorLogServiceProvider extends ServiceProvider {
 			$usermodel = strtolower(Config::get('visitor-log::usermodel'));
 			if(($usermodel == "auth" || $usermodel == "laravel") && Auth::check())
 			{
-				$user = Auth::user()->id;
+				$user = Auth::user()->idColaborador;
 			}
 
 			if($usermodel == "sentry" && class_exists('Cartalyst\Sentry\SentryServiceProvider') && Sentry::check())
