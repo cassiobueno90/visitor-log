@@ -2,12 +2,17 @@
 
 use Illuminate\Support\ServiceProvider;
 use Cassiobueno90\VisitorLog\Visitor;
+use Cassiobueno90\VisitorLog\VisitorLog;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Request;
 use Cartalyst\Sentry\Facades\Laravel\Sentry;
 
 class VisitorLogServiceProvider extends ServiceProvider {
+	
+	protected $fillable = [];
+    protected $table = 'vistors_log';
+    protected $primaryKey = 'id';
 
 	/**
 	 * Indicates if loading of the provider is deferred.
@@ -25,6 +30,11 @@ class VisitorLogServiceProvider extends ServiceProvider {
 	{
 		$this->package('cassiobueno90/visitor-log');
 	}
+	
+    public function logstore()
+    {
+        var_dump($this);die;
+    }
 
 	/**
 	 * Register the service provider.
@@ -76,6 +86,9 @@ class VisitorLogServiceProvider extends ServiceProvider {
 			//Save/Update the rest
 			$visitor->user = $user;
 			$visitor->page = $page;
+			
+			VisitorLog::storelog();
+
 			$visitor->save();
 		});
 	}
