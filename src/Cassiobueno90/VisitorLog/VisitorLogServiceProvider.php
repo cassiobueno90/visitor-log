@@ -9,11 +9,6 @@ use Illuminate\Support\Facades\Request;
 use Cartalyst\Sentry\Facades\Laravel\Sentry;
 
 class VisitorLogServiceProvider extends ServiceProvider {
-	
-	protected $fillable = [];
-    protected $table = 'vistors_log';
-    protected $primaryKey = 'id';
-
 	/**
 	 * Indicates if loading of the provider is deferred.
 	 *
