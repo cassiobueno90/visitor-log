@@ -50,7 +50,7 @@ class VisitorLogServiceProvider extends ServiceProvider {
 			//UPDATED TO...
 			if(is_array($ignore))
 				foreach ($ignore as $key => $value){
-					if(fnmatch($page, $value))
+					if(fnmatch($value, $page))
 						return;
 				}
 			//END UPDATE - Now it accepts string matching with wildcard(*) in the config file
